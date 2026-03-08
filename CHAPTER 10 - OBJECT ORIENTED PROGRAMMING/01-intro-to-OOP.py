@@ -17,4 +17,3 @@ code likhty hain.
 '''
 # This concept focuses on using reusable code (DRY Principle).
 # DRY means : "Don't Repeat Yourself".
-

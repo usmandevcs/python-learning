@@ -3,12 +3,20 @@
 List Comprehension is an elegant way to create lists based 
 on existing lists. 
 '''
+        # OR 
+'''
+List comprehension is a concise way to create a list in python
+it is compact and easier to read than traditional for loops.
+It consists of brackets containing an expression followed by a
+for clause, and optionally, one or more if clauses.
+'''
 # SYNTAX
-# [expression for item in iterable if condition]
+# [expression for value in iterable if condition]
+
 # Example:
-list1 = [1,7,12,11,22,] 
-list2 = [x for x in list1 if x > 8]
-print(list2)
+
+doubles = [x*2 for x in range(1, 11)]
+print(doubles)  # [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 # Ye kya hai?
 '''
 List banane ka ek line wala smart tareeqa.
@@ -18,7 +26,6 @@ List banane ka ek line wala smart tareeqa.
 # python# Purana lamba tareeqa
 numbers = [1, 2, 3, 4, 5]
 squares = []
-
 for num in numbers:
     squares.append(num * num)
 
@@ -33,9 +40,17 @@ print(squares)
 
 
 # Condition ke saath:
+numbers = [1, -2, 3, -4, 5, -6]
+positive_nums = [num for num in numbers if num >= 0]
+print(positive_nums)  # [1, 3, 5]
+# Now negative numbers 
+negative_nums = [num for num in numbers if num < 0]
+print(negative_nums)  # [-2, -4, -6]
+
+
+
 # Sirf even numbers chahiye:
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 # Sirf even numbers
 evens = [num for num in numbers if num % 2 == 0]
 print(evens)  # [2, 4, 6, 8, 10]

@@ -33,7 +33,7 @@ print(f"Owner Salary: {usman.salary}")
 
 # OBJECT:
 '''
-An object is an instance of a class. When a class is defined, 
+An object is an instance/attributes of a class. When a class is defined, 
 no memory is allocated until an object of that class is created.
 Each object can hold different data, even though they share the 
 same structure defined by the class.
@@ -42,12 +42,16 @@ When class is defined, a template (info) is defined. Memory is
 allocated only after object instantiation.
 
 Objects of a given class can invoke the methods available to it 
-without revealing the implementation details to the user. 
+without revealing the implementation details to the user.
+'''
+# Abstraction & Encapsulation
+'''
 Abstractions & Encapsulation! .Abstractions and Encapsulation ka
 mtlb k aik object apny andr jo data ha wo apny andr rakhta ha aur 
 bahir nai nikalta. aur apny andr jo methods ha wo apny andr hi use 
 karta ha aur bahir nai nikalta.andr hi apny andr data ko manipulate 
 karta ha.
+hum is topic ko chapter 11 me detail me samjhy gy.
 '''
 # For example:
 '''

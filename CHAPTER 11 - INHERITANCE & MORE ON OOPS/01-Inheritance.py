@@ -13,15 +13,18 @@ an existing class.
 class Employee:  # Base class/original class
 # Code 
 
-class Programmer(Employee): # Derived or child class/subclass jo base class se linked hai
+
+    class Programmer(Employee): # Derived or child class/subclass jo base class se linked hai
 # Code 
-'''
-'''
+
+
 1. We can use the method and attributes of 'Employee' in 
 'Programmer' object.
 
 2. Also, we can overwrite or add new attributes and methods in 
 'Programmer' class.
+3. We can create multiple levels of inheritance, where a class can
+inherit from a class that is itself a subclass of another class.
 '''
 # Example of Inheritance
 class Employee:  # Base class

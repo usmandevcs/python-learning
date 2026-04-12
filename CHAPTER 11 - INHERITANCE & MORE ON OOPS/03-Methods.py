@@ -1,8 +1,16 @@
+# Methods In OOP:
+'''
+There are different types of methods in OOP, each serving a 
+specific purpose.
+These methods are given below:
+'''
+
 # SUPER() METHOD
 '''
 The super() method is used to access the methods of a super 
-class in the derived class.means super() method jo ha wo un 
-methods ko access karta ha jo base/parent class ma hoty hain.
+class(Base class) in the derived class.means super() method jo 
+ha wo un methods ko access karta ha jo base/parent class ma hoty 
+hain.
 It is commonly used to call the constructor of the base class from 
 the derived class.
 This is particularly useful in inheritance when you want to
@@ -62,8 +70,8 @@ print(company.show()) #output: company name is Sky Groups
 # 1. @property Decorator (Getter, Setter, Deleter)
 '''
 Python ma @property decorator ka use encapsulated attribute access 
-k liye hota ha.Normal class ma agar tum direct attributes access 
-karty ho, to validation/control possible nahi hota.@property allow 
+k liye hota ha.Normal class ma agar hum direct attributes access 
+karty hain, to validation/control possible nahi hota.@property allow 
 karta ha attribute ko method ki tarah control karna without changing 
 syntax.
 '''

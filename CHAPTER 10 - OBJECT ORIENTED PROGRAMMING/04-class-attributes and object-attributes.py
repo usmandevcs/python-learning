@@ -7,9 +7,16 @@ hain.'''
 
 # Example: 
 
-'''consider a class 'Employee' that has a class attribute 
+'''
+consider a class 'Employee' that has a class attribute 
 'company'. This attribute is shared across all instances of 
-the class.'''
+the class.
+When we create an object 'harry' of the class 'Employee', it can 
+access the class attribute 'company' and it will return "Google".
+If we change the class attribute 'company' to "YouTube", then all
+objects of the class 'Employee' will reflect this change when they
+access the 'company' attribute.
+'''
 
 class Employee: # is class k andr aik class attribute define kiya ha company jo k sabhi employee k liye valid ha 
     company = "Google" # Specific to Each Class 
@@ -20,8 +27,16 @@ Employee.company = "YouTube" # Changing Class Attribute
 
 # INSTANCE ATTRIBUTES or Object Attributes
 '''
-An attribute that belongs to the Instance (object). Assuming the 
+An attribute that belongs to the object. Assuming the 
 class from the previous 
+example, if we create an object 'harry' of the class 'Employee',
+we can assign an instance attribute 'name' to 'harry' and set it to
+"Harry". This attribute is specific to the 'harry' object and is not
+shared with other instances of the class. If we create another object
+'john' of the class 'Employee', it will not have the 'name' attribute
+unless we explicitly assign it to 'john'. Each object can have its own
+set of instance attributes that can differ from other objects of the same
+class.
 '''
 # example: 
 

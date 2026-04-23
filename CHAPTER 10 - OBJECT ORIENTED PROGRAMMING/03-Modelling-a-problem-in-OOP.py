@@ -12,18 +12,19 @@ classes, attributes, aur methods k sath map kartay hain.
 # • Verbs → Methods → getSalary(), increment()
 # Example:
 class Owner:
-    def __init__(self): # Constructor Method
+    def __init__(self, name, age): # Constructor Method
         # Attributes
-        self.name = "Usman"
-        self.age = 19
+        self.name = name 
+        self.age = age
         self.salary = 1000000
 
     def getSalary(self): # Method to get salary
         return self.salary
+
     def increment(self, amount): # Method to increment salary
         self.salary += amount
 
-usman = Owner() # Creating an Object of the Class
+usman = Owner("Usman", 20) # Creating an Object of the Class
 print(f"Owner Name: {usman.name}")
 print(f"Owner Age: {usman.age}")
 print(f"Owner Salary: {usman.getSalary()}")

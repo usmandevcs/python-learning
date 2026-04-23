@@ -7,22 +7,24 @@ hain.'''
 
 # Example: 
 
-'''
-consider a class 'Employee' that has a class attribute 
-'company'. This attribute is shared across all instances of 
-the class.
-When we create an object 'harry' of the class 'Employee', it can 
-access the class attribute 'company' and it will return "Google".
-If we change the class attribute 'company' to "YouTube", then all
-objects of the class 'Employee' will reflect this change when they
-access the 'company' attribute.
-'''
+class Car:
+    wheels = 4 # class attribute
+    def __init__ (self, model, year):    # This is constructor
+        self.model = model         # And also instance attribute
+        self.year = year 
 
-class Employee: # is class k andr aik class attribute define kiya ha company jo k sabhi employee k liye valid ha 
-    company = "Google" # Specific to Each Class 
-harry = Employee() # Object Instatiation 
-harry.company 
-Employee.company = "YouTube" # Changing Class Attribute
+    def start(self):
+        print(f"Engine is start of {self.model}")
+    def stop(self):
+        print(f"Engine is off of {self.model} ")
+
+car1 = Car("Toyota", 2025)
+print(f"Car Model: {car1.model}")
+print(f"Car Year: {car1.year}")
+print(f"Car Wheels: {car1.wheels}")
+
+car1.start()
+car1.stop()
 
 
 # INSTANCE ATTRIBUTES or Object Attributes
@@ -40,8 +42,8 @@ class.
 '''
 # example: 
 
-harry.name = "harry" # ye dono objects k apny attributes hain jo k specific hain
-harry.salary = "30k"  # Adding instance attribute 
+#harry.name = "harry" # ye dono objects k apny attributes hain jo k specific hain
+#harry.salary = "30k"  # Adding instance attribute 
 
 # Note: 
 '''

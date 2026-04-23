@@ -5,38 +5,6 @@ specific purpose.
 These methods are given below:
 '''
 
-# SUPER() METHOD
-'''
-The super() method is used to access the methods of a super 
-class(Base class) in the derived class.means super() method jo 
-ha wo un methods ko access karta ha jo base/parent class ma hoty 
-hain.
-It is commonly used to call the constructor of the base class from 
-the derived class.
-This is particularly useful in inheritance when you want to
-initialize the base class attributes in the derived class.
-'''
-super().__init__()
-# __init__() Calls constructor of the base class
-
-# Example of super() method
-class Person:  # Base class
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-    def display(self):
-        return f"Name: {self.name}, Age: {self.age}"
-class Student(Person):  # Derived class
-    def __init__(self, name, age, student_id):
-        super().__init__(name, age)  # Calling the constructor of the base class
-        self.student_id = student_id
-
-    def display(self):
-        base_info = super().display()  # Calling the display method of the base class
-        return f"{base_info}, Student ID: {self.student_id}"
-    
-
 # CLASS METHOD 
 '''
 A class method is a method which is bound to the class and not the 

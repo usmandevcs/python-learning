@@ -15,11 +15,13 @@ conventionally named self. The self parameter refers to the
 instance of the class that is being created. It allows you to 
 access and modify the attributes of the object within the method.
 '''
-'''The __init__() method is a special method in Python it is also
+'''
+The __init__() method is a special method in Python it is also
 called dunder method in classes,known as the constructor. 
 It is automatically called when a new object of the class is created. 
 This method is used to initialize the attributes of the class.
 '''
+
 # Key Points about __init__():
 '''
 1: __init__() is a special method which is first run as soon as 
@@ -31,7 +33,7 @@ values.
 5: The self parameter refers to the current instance of the class.
 6: It does not return any value; its purpose is to set up the 
 object.
-7: It takes ‘self’ argument and can also take further arguments. 
+7: It takes 'self' argument and can also take further arguments. 
 8: It is defined using double underscores before and after the 
 name.
 '''

@@ -13,7 +13,7 @@ common hai. Jab hum API se data receive karte hain, to wo JSON
 format me hota hai.
 '''
 # Example of JSON data
-from urllib import response
+import json
 
 
 json_data = {
@@ -22,9 +22,11 @@ json_data = {
     "city": "New York"
 }
 # In Python:
-response.json()  # This will convert JSON response to a Python dictionary
+api_response = '{"name": "Alice", "age": 30, "city": "New York"}'
+response_dict = json.loads(api_response)  # This will convert JSON response to a Python dictionary
+print(response_dict)
 # Example of converting Python dictionary to JSON string
-import json
+
 python_dict = {
     "name": "Bob",
     "age": 25,
@@ -33,7 +35,8 @@ python_dict = {
 json_string = json.dumps(python_dict)  # This will convert Python dictionary to JSON string
 print(json_string)
 '''
-ye dumb() function Python dictionary ko JSON string me convert karta hai.
+ye dumb() function Python dictionary ko JSON string me convert 
+karta hai.
 JSON string ko API me bhejne ke liye use kiya jata hai, jabki
 response.json() function JSON response ko Python dictionary me 
 convert karta hai, jise hum easily access kar sakte hain.

@@ -26,7 +26,7 @@ else:
 
 # TRY WITH FINALLY 
 '''
-Python offers a ‘finally’ clause which ensures execution of a 
+Python offers a 'finally' clause which ensures execution of a 
 piece of code inspective of the exception. 
 simple mtlb ye k finnaly chaly ga hi chaly ga chahu try: block 
 run ho ya except block run ho. 

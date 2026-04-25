@@ -9,6 +9,21 @@ koi aesa kam jis se program crash kary ya eror dy to us cheez ko
 handle karny k exception handling use ki jati ha ta k user ko 
 pata b lag jaye k invalid cheez input hoi ha aur eror b na aye.
 '''
+# Types of Exceptions:
+'''
+1. ZeroDivisionError: Raised when division by zero is attempted.
+2. ValueError: Raised when a function receives an argument of 
+the right type but an inappropriate value.
+3. TypeError: Raised when an operation or function is applied 
+to an object of inappropriate type.
+4. IndexError: Raised when a sequence subscript is out of range.
+5. KeyError: Raised when a dictionary key is not found.
+6. FileNotFoundError: Raised when a file or directory is 
+requested but cannot be found.
+7. ImportError: Raised when an import statement fails to find 
+the module or when a from ... import fails to find a named 
+attribute in the module.
+'''
 try: # Code which might throw exception  
     pass
 except Exception as e:  
